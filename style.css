@@ -1,3 +1,11 @@
+article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'nagy' 
+    'kis';
+    grid-gap: 10px;
+}
+
 
 
 .nagyKep{
@@ -7,6 +15,24 @@
     border:  1px solid gray;
     padding: 10px;
     display:  flex;
+    grid-area: 'nagy';
+}
+
+
+.nagyKep{
+    grid-area: nagy;
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+    background-color: bisque;
+}
+.kisKep{
+    grid-area: kis;
+}
+
+.kisKep{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 
@@ -14,4 +40,23 @@
 button {
     border: 1px groove gray;
     border-radius: 5px;
+}
+
+.kep{
+    width: 200px;
+    height: 100px;
+    padding: 30px;
+  
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.balGomb, .jobbGomb, .fokepTarolo{
+margin: auto;
+
+
 }

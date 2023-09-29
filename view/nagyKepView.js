@@ -28,14 +28,10 @@ class NagyKepView{
     
      #esemenyElem(esemeny) {
         window.dispatchEvent(new CustomEvent(esemeny));
-
-
      }
 
      nagyKepElemBeallitas(kep){
         this.nagyIMGElem.attr({"src":kep, "alt":kep});
-
-
      }
 
 

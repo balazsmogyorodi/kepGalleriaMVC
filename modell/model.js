@@ -27,6 +27,13 @@ class Model {
     getAdat() {
         return this.#adatok[this.#id];
     }
+    setId(id){
+        this.#id = id;
+    }
+
+    getAdatok(){
+        return this.#adatok;
+    }
   
 
 }
